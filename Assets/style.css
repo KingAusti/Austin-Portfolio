@@ -82,10 +82,12 @@ header nav a:hover{
     padding: 5px;
     text-decoration: none;
 }
-/*img{    
-    max-height: 50%;
-    max-width: 50%;
-}*/
+body{
+    background-color: black;
+    background-image: url(./Pictures/Owl-Background.jpg);
+    display: flex;
+    flex-direction: column;  
+}
 section{
     height:250px;
     background-color: cadetblue;
@@ -123,7 +125,17 @@ section{
 .horiseon:hover{
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+.lower-projects{
+    display:flex;    
+    width:100%;
+}
+.lower-projects section {
+    
+    flex:1;
+    object-fit: cover;
+}
 .run-buddy{
+    width:auto;
     text-align: center;
     border-radius: 15px;
     flex-flow:row wrap;
@@ -149,10 +161,11 @@ section{
 .robot-gladiators:hover {
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-body{
-    background-color: black;
-    background-image: url(./Pictures/Owl-Background.jpg);
-       
+
+}
+
+.flex {
+    display: flex;
 }
 footer{
     display:flex;
@@ -163,6 +176,7 @@ footer{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    padding:8px;
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -196,24 +210,12 @@ footer{
     section{
         padding: 30px 15px;
     }
-    .step h3{
-        flex: 1 100%;
-        text-align:center;      
+    .about {
+        font-size:small;
+        width: 60vw;
+        margin-right: 100px;
     }
-    .step-info{
-        flex:2 100%;
-        text-align: center;
-        justify-content: center;
-    }
-    .step-img {
-        flex:0 32%;
-        margin-right: 0;
-        margin-top:15px;
-        margin-bottom:15px;
-    }
-    .step-text {
-        flex:100%;   
-    }
+    
   }  
     /*Utilities*/
     .text-left{
@@ -239,19 +241,11 @@ footer{
     }
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {      
-      .section-title {
+    .section-title {
           width:95%;          
-      }
-      .intro p{
-          width:100%;          
-      }      
-      .contact-info{
-          text-align:center;          
-      }
-      .contact-info > * {
-          flex:0 100%;
-    }
-    .contact-form{
-        order:3;
-    }
+    }  
+    .about {
+        margin:86px;
+        margin-top:165px;
+    }    
   }
