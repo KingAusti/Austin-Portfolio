@@ -7,6 +7,9 @@
     text-decoration: none;
     text-decoration-color: white;
 }
+.flex {
+    display: flex;
+}
 .headshot img {
     object-fit: scale-down;    
     border-bottom: solid 3px white;
@@ -113,6 +116,15 @@ section{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.lower-projects{
+    display:flex;    
+    width:100%;
+}
+.lower-projects section {
+    
+    flex:1;
+    object-fit: cover;
+}
 .horiseon{
     text-align: center;
     display:flex;    
@@ -124,15 +136,6 @@ section{
 }
 .horiseon:hover{
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.lower-projects{
-    display:flex;    
-    width:100%;
-}
-.lower-projects section {
-    
-    flex:1;
-    object-fit: cover;
 }
 .run-buddy{
     width:auto;
@@ -160,12 +163,6 @@ section{
 }
 .robot-gladiators:hover {
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-}
-
-.flex {
-    display: flex;
 }
 footer{
     display:flex;
