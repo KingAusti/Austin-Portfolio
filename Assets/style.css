@@ -125,6 +125,18 @@ section{
     flex:1;
     object-fit: cover;
 }
+.pokebuilder {
+    text-align: center;
+    display: flex;
+    width: auto;
+    border-radius: 15px;
+    flex-flow: column nowrap;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-image: url(#);
+}
+.pokebuilder:hover{
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
 .horiseon{
     text-align: center;
     display:flex;    
